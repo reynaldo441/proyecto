@@ -1,109 +1,58 @@
-/* =========================================
-   FOOTER (BEM)
-   ========================================= */
-.footer {
-  background-color: var(--color-coffee-dark);
-  color: var(--color-text-muted);
-  padding-top: 3.5rem;
-  margin-top: auto;
-  border-top: 3px solid var(--color-amber);
+.pie-pagina {
+    background-color: var(--color-oscuro);
+    color: var(--color-crema);
+    padding: 40px 20px 20px;
 }
 
-.footer__container {
-  max-width: var(--container-max-width);
-  margin: 0 auto;
-  padding: 0 var(--spacing-lg) 3rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2.5rem;
+.pie-pagina__contenedor {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
 }
 
-.footer__brand {
-  margin-bottom: var(--spacing-md);
+.pie-pagina__columna {
+    flex: 1;
+    min-width: 200px;
 }
 
-.footer__description {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: var(--color-text-muted);
-  opacity: 0.85;
+.pie-pagina__titulo {
+    font-size: 20px;
+    color: var(--color-dorado);
+    margin-bottom: 15px;
 }
 
-.footer__title {
-  color: var(--color-white);
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin-bottom: 1.2rem;
-  position: relative;
-  padding-bottom: 0.5rem;
+.pie-pagina__subtitulo {
+    font-size: 16px;
+    color: var(--color-dorado);
+    margin-bottom: 10px;
 }
 
-.footer__title::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 35px;
-  height: 2px;
-  background-color: var(--color-amber);
+.pie-pagina__texto {
+    margin-bottom: 8px;
+    font-size: 14px;
 }
 
-.footer__list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-  font-size: 0.9rem;
+.pie-pagina__lista li {
+    margin-bottom: 8px;
 }
 
-.footer__link {
-  transition: color var(--transition-fast), transform var(--transition-fast);
-  display: inline-block;
+.pie-pagina__enlace {
+    color: var(--color-crema);
+    font-size: 14px;
 }
 
-.footer__link:hover {
-  color: var(--color-amber);
-  transform: translateX(4px);
+.pie-pagina__enlace:hover {
+    color: var(--color-dorado);
 }
 
-.footer__item--contact {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6rem;
-}
-
-.footer__bottom {
-  background-color: rgba(0, 0, 0, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 1.2rem var(--spacing-lg);
-  text-align: center;
-  font-size: 0.85rem;
-}
-
-.footer__highlight {
-  color: var(--color-amber);
-  font-weight: 600;
-}
-
-/* --- Bloque: Social --- */
-.social {
-  display: flex;
-  gap: 0.8rem;
-  margin-top: var(--spacing-md);
-}
-
-.social__link {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: var(--color-lead-dark);
-  color: var(--color-white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color var(--transition-fast), transform var(--transition-fast);
-}
-
-.social__link:hover {
-  background-color: var(--color-amber);
-  transform: translateY(-3px);
+.pie-pagina__derecho {
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.6;
+    padding-top: 20px;
+    border-top: 1px solid #333;
 }

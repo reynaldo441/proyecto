@@ -1,31 +1,127 @@
-<!-- ========== HEADER con BEM ========== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE Delicia</title>
+
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Ic-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- -->
 <header class="cabecera">
     <div class="cabecera__contenedor">
         <a href="#" class="cabecera__logo">
             <i class="fas fa-mug-hot"></i> COFFEE Delicia
         </a>
 
-        <nav class="cabecera__menu menu-navegacion">
-            <ul class="menu-navegacion__lista">
-                <li class="menu-navegacion__item">
-                    <a href="#" class="menu-navegacion__enlace menu-navegacion__enlace--activo">Inicio</a>
+        <nav class="cabecera__navegacion">
+            <ul class="menu__lista">
+                <li class="menu__item">
+                    <a href="#" class="menu__enlace menu__enlace--activo">Inicio</a>
                 </li>
-                <li class="menu-navegacion__item">
-                    <a href="#" class="menu-navegacion__enlace">Menú</a>
+                <li class="menu__item">
+                    <a href="#" class="menu__enlace">Menú</a>
                 </li>
-                <li class="menu-navegacion__item">
-                    <a href="#" class="menu-navegacion__enlace">Servicios</a>
+                <li class="menu__item">
+                    <a href="#" class="menu__enlace">Servicios</a>
                 </li>
-                <li class="menu-navegacion__item">
-                    <a href="#" class="menu-navegacion__enlace">Sucursales</a>
+                <li class="menu__item">
+                    <a href="#" class="menu__enlace">Sucursales</a>
                 </li>
-                <li class="menu-navegacion__item">
-                    <a href="#" class="menu-navegacion__enlace">Nosotros</a>
+                <li class="menu__item">
+                    <a href="#" class="menu__enlace">Nosotros</a>
                 </li>
-                <li class="menu-navegacion__item">
-                    <a href="#" class="menu-navegacion__enlace">Contáctanos</a>
+                <li class="menu__item">
+                    <a href="#" class="menu__enlace">Contacto</a>
                 </li>
             </ul>
         </nav>
     </div>
 </header>
+
+<!-- ========== MAIN ========== -->
+<main>
+    <section class="hero">
+        <div class="hero__contenedor">
+            <p class="hero__etiqueta">Hecho al momento</p>
+            <h1 class="hero__titulo">Nuestro menú</h1>
+            <p class="hero__texto">Café de especialidad, repostería horneada cada mañana y opciones saladas para acompañar cualquier momento del día.</p>
+        </div>
+    </section>
+
+    <section class="productos">
+        <div class="productos__contenedor">
+            <h2 class="productos__titulo">Nuestros Productos</h2>
+            <p class="productos__descripcion">Descubre nuestra selección de cafés artesanales, repostería fresca y alimentos deliciosos.</p>
+
+            <div class="filtros">
+                <button class="filtro filtro--activo" id="btn-cafe">
+                    <i class="fas fa-mug-hot"></i> Café
+                </button>
+                <button class="filtro" id="btn-reposteria">
+                    <i class="fas fa-birthday-cake"></i> Repostería
+                </button>
+                <button class="filtro" id="btn-comida">
+                    <i class="fas fa-utensils"></i> Comida
+                </button>
+            </div>
+
+            <div class="tarjetas">
+                <div class="tarjeta tarjeta--cafe">
+                    <img src="img/cafe.jpg" alt="Café" class="tarjeta__imagen">
+                    <h3 class="tarjeta__nombre">Café Especial</h3>
+                    <p class="tarjeta__precio">Bs. 18.00</p>
+                </div>
+                <div class="tarjeta tarjeta--reposteria">
+                    <img src="img/pastel.jpg" alt="Pastel" class="tarjeta__imagen">
+                    <h3 class="tarjeta__nombre">Pastel de Chocolate</h3>
+                    <p class="tarjeta__precio">Bs. 25.00</p>
+                </div>
+                <div class="tarjeta tarjeta--comida">
+                    <img src="img/sandwich.jpg" alt="Sándwich" class="tarjeta__imagen">
+                    <h3 class="tarjeta__nombre">Sándwich Artesanal</h3>
+                    <p class="tarjeta__precio">Bs. 22.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="pie-pagina">
+    <div class="pie-pagina__contenedor">
+        <div class="pie-pagina__columna">
+            <h3 class="pie-pagina__titulo">COFFEE Delicia</h3>
+            <p class="pie-pagina__texto">El mejor café de la ciudad.</p>
+        </div>
+        <div class="pie-pagina__columna">
+            <h4 class="pie-pagina__subtitulo">Enlaces</h4>
+            <ul class="pie-pagina__lista">
+                <li><a href="#" class="pie-pagina__enlace">Inicio</a></li>
+                <li><a href="#" class="pie-pagina__enlace">Menú</a></li>
+                <li><a href="#" class="pie-pagina__enlace">Nosotros</a></li>
+            </ul>
+        </div>
+        <div class="pie-pagina__columna">
+            <h4 class="pie-pagina__subtitulo">Contacto</h4>
+            <p class="pie-pagina__texto"><i class="fas fa-map-marker-alt"></i> La Paz, Bolivia</p>
+            <p class="pie-pagina__texto"><i class="fas fa-phone"></i> 12345678</p>
+        </div>
+    </div>
+    <p class="pie-pagina__derecho">&copy; 2024 COFFEE Delicia</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

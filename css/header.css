@@ -1,0 +1,38 @@
+.cabecera {
+    background-color: var(--color-oscuro);
+    padding: 15px 0;
+}
+
+.cabecera__contenedor {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.cabecera__logo {
+    color: var(--color-crema);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu__lista {
+    display: flex;
+    gap: 20px;
+}
+
+.menu__enlace {
+    color: var(--color-crema);
+    font-size: 16px;
+}
+
+.menu__enlace:hover {
+    color: var(--color-dorado);
+}
+
+.menu__enlace--activo {
+    color: var(--color-dorado);
+    border-bottom: 2px solid var(--color-dorado);
+}

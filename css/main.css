@@ -1,0 +1,113 @@
+/* Hero */
+.hero {
+    background-color: var(--color-oscuro);
+    color: var(--color-crema);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero__contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero__etiqueta {
+    color: var(--color-dorado);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.hero__titulo {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero__texto {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* Productos */
+.productos {
+    padding: 50px 20px;
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.productos__titulo {
+    font-size: 30px;
+    color: var(--color-marron);
+    margin-bottom: 10px;
+}
+
+.productos__descripcion {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Filtros */
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filtro {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.filtro--activo {
+    background-color: var(--color-dorado);
+    color: var(--color-marron);
+    font-weight: bold;
+}
+
+/* Tarjetas */
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    width: 280px;
+    overflow: hidden;
+}
+
+.tarjeta__imagen {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tarjeta__nombre {
+    font-size: 18px;
+    padding: 15px 15px 5px;
+    color: var(--color-marron);
+}
+
+.tarjeta__precio {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-marron);
+    padding: 0 15px 15px;
+}
+
+/* Ocultar categorías por defecto */
+.tarjeta--cafe,
+.tarjeta--reposteria,
+.tarjeta--comida {
+    display: block;
+}

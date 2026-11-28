@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    .cabecera__contenedor {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu__lista {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero__titulo {
+        font-size: 32px;
+    }
+
+    .pie-pagina__contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+}
